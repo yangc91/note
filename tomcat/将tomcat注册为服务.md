@@ -1,6 +1,10 @@
 # tomcat注册为服务
 ***
 
+## 参考资料
+[windows和linux 下将tomcat注册为服务](http://www.cnblogs.com/xwdreamer/p/3411986.html "windows和linux 下将tomcat注册为服务")
+
+
 ## windows
 1. 必须下载window版tomcat:
    apache-tomcat-7.0.85-windows-x64.zip
