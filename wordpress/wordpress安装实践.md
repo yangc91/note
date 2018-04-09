@@ -21,8 +21,8 @@
 * 启动nginx，打开readme.html，参考该文档配置wp-config文件
 
 * 配置完wp-config，在浏览器中访问wp-admin/install.php
-> 前面的步骤很容易完成，但这一步却无法执行，并未进入到安装界面，直接下载文件
-> 尝试多次都是如此，google后发现，nginx访问php页面时需要将其传递给php解释器，没有配置就当成普通文件直接下载
+> 前面的步骤很容易完成，但这一步却无法执行，并未进入到安装界面，而是直接下载文件
+> 尝试多次都是如此，google后发现，nginx访问php页面时需要将其传递给php解释器，没有配置就会当成普通文件直接下载
 
 * nginx+php+mysql整合
 > 参考[how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7)
@@ -65,5 +65,5 @@ location ~ \.php$ {
 
 systemctl restart nginx
 ```
-1. 再次打开readme.html,再次访问wp-admin/install.php，即可完成安装
+* 再次打开readme.html,再次访问wp-admin/install.php，即可完成安装
 
