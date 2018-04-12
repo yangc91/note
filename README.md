@@ -2,13 +2,15 @@
 > 码农工作、学习笔记
 
 ## 目录
+## [java](#java)
 ## [maven](#maven)
 ## [redis](#redis)
 ## [tomcat](#tomcat)
 ## [wordpress](#wordpress)
 
+## java
 
-
+* [enum(枚举)实践](https://github.com/yangc91/note/blob/master/java/enum(%E6%9E%9A%E4%B8%BE)%E5%AE%9E%E8%B7%B5.md)
 
 ## maven
 
