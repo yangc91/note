@@ -2,12 +2,12 @@
 > 码农工作、学习笔记
 
 ## 目录
-## [linux](#linux)
-## [java](#java)
-## [maven](#maven)
-## [redis](#redis)
-## [tomcat](#tomcat)
-## [wordpress](#wordpress)
+* [Linux](#linux)
+* [Java](#java)
+* [Maven](#maven)
+* [Redis](#redis)
+* [Tomcat](#tomcat)
+* [Wordpress](#wordpress)
 
 
 ## linux
