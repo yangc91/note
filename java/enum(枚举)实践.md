@@ -4,8 +4,11 @@
 ## [两个隐式方法](#两个隐式方法)
 ## [声明及基本用法](#声明及基本用法)
 ## [与switch配合](#与switch配合)
+## [推荐阅读](#推荐阅读)
+
 
 ## 两个隐式方法
+
 > 当生成一个枚举值类型的对象时，它会直接用有两个隐式的静态方法
 > * values()
 > * valueOf(String name)
@@ -43,6 +46,7 @@ public static E valueOf(String name);
 > 个人觉得这两个方法很重要，使用的场景也很多
 
 ## 声明及基本用法
+
 ```
   public enum Opt {
     ON(1),
@@ -83,6 +87,7 @@ public static E valueOf(String name);
 ```
 
 ## 与switch配合
+
 ```
   public void withSwitch (int value) {
     Opt opt = Opt.fromValue(value);
@@ -100,4 +105,5 @@ public static E valueOf(String name);
 ```
 
 ## 推荐阅读
+
 * [深入理解Java枚举类型(enum)](https://blog.csdn.net/javazejian/article/details/71333103)

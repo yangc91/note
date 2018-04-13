@@ -1,5 +1,5 @@
-# redis在windows下注册为服务
-***
+redis在windows下注册为服务
+====
 
 1. 下载, [windows版地址](https://github.com/MicrosoftArchive/redis "windows版下载地址")
 1. 安装服务

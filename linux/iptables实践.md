@@ -1,4 +1,5 @@
-# iptables实践
+iptables实践
+======
 
 ## 目录
 ## [自定义firewall](#自定义firewall)
@@ -6,7 +7,9 @@
 ## [放行特定IP](#放行特定IP)
 ## [端口及协](#端口及协)
 
-## 自定义firewall
+自定义firewall
+------
+
 ```
 #!/bin/bash
 #
@@ -49,13 +52,17 @@ service iptables save
 #
 iptables -L -v
 ```
-## 多个网卡接口
+多个网卡接口
+------
+
 ```
 iptables -A INPUT -i lo -j ACCEPT
 iptables -A INPUT -i eth0 -j ACCEPT
 ```
 
-## 放行特定IP
+放行特定IP
+------
+
 ```
 # 接纳来自被信任 IP 地址的封包
 iptables -A INPUT -s 192.168.0.4 -j ACCEPT # change the IP address as appropriate
@@ -68,7 +75,9 @@ iptables -A INPUT -s 192.168.0.0/255.255.255.0 -j ACCEPT # using a subnet mask
 iptables -A INPUT -s 192.168.0.4 -m mac --mac-source 00:50:8D:FD:E6:32 -j ACCEPT
 ```
 
-## 端口及协议
+端口及协议
+------
+
 ```
 # 接纳目标端口是 6881 号（bittorrent）的 tcp 封包
 iptables -A INPUT -p tcp --dport 6881 -j ACCEPT
