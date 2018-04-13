@@ -1,6 +1,6 @@
-# iptables
+# iptables实践
 
-##目录
+## 目录
 ## [自定义firewall](#自定义firewall)
 ## [多个网卡接口](#多个网卡接口)
 ## [放行特定IP](#放行特定IP)
@@ -49,13 +49,13 @@ service iptables save
 #
 iptables -L -v
 ```
-##多个网卡接口
+## 多个网卡接口
 ```
 iptables -A INPUT -i lo -j ACCEPT
 iptables -A INPUT -i eth0 -j ACCEPT
 ```
 
-##放行特定IP
+## 放行特定IP
 ```
 # 接纳来自被信任 IP 地址的封包
 iptables -A INPUT -s 192.168.0.4 -j ACCEPT # change the IP address as appropriate
