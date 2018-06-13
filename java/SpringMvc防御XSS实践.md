@@ -159,4 +159,6 @@ public class CustomStringEditor extends PropertyEditorSupport {
 
 目前代码已经存放到github上，欢迎star 和 fork，指出问题，一起学习交流
 
+github地址：[SpringMvc防御XSS实践](https://github.com/yangc91/note/blob/master/java/SpringMvc防御XSS实践.md)
+
 源码地址：[spring mvc xss防御](https://github.com/yangc91/springxss)
