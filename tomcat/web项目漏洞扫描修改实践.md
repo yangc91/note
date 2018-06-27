@@ -37,7 +37,7 @@ bind 127.0.0.1
 ./redis-server /etc/redis.conf &
 
 ```
-1. 需要远程访问时，编辑`redis.conf`文件
+3. 需要远程访问时，编辑`redis.conf`文件
 ```
 vim redis.conf
 
