@@ -112,7 +112,7 @@ JAVA_OPTS="$JAVA_OPTS -XX:PermSize=128M -XX:MaxPermSize=256M -Xms1024M -Xmx1024M
 ###并发线程优化
 
 ```
-vim catalina.sh
+vim server.xml
 
 ...
 
