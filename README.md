@@ -33,3 +33,9 @@
 ## wordpress
 
 * [wordpress安装实践](https://github.com/yangc91/note/blob/master/wordpress/wordpress%E5%AE%89%E8%A3%85%E5%AE%9E%E8%B7%B5.md)
+
+## 联系我
+
+QQ: 764991510
+
+微信： yangc91
