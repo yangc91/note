@@ -86,6 +86,33 @@ public static E valueOf(String name);
   }
 ```
 
+## 改进 fromValue()
+
+```
+public enum Opt {
+    ON(1),
+    OFF(2);
+    private int value;
+
+    private Opt(int value) {
+      this.value = value;
+    }
+
+    private static final Map<Integer,Opt> intToEnum = new HashMap<>();
+
+    static {
+      for (Opt opt : Opt.values()) {
+        intToEnum.put(opt.value, opt);
+      }
+    }
+
+    public static Opt fromValue(int value) {
+      return intToEnum.get(value);
+    }
+  }
+```
+> 比 switch 更简洁、更优雅 
+
 ## 与switch配合
 
 ```
