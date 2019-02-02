@@ -31,3 +31,9 @@ mvn install
 ![](https://yangc91.oss-cn-hongkong.aliyuncs.com/imgs/20190202220330.png)
 
 > 创建之后即可在列表中查看到自定义的模板， 选择并进行下一步即可。
+
+## 参考资料
+
+[Guide to Maven Archetype](https://www.baeldung.com/maven-archetype)
+
+[Guide to Creating Archetypes](https://maven.apache.org/guides/mini/guide-creating-archetypes.html)
