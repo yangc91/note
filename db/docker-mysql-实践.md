@@ -1,3 +1,4 @@
+
 ## docker mysql image
 
 [image url](https://hub.docker.com/_/mysql?tab=description)
@@ -23,13 +24,18 @@ docker exec -i -t some-mysql bash
 mysql -uroot -p
 
 
-# 方式二： 远程连接
+# 方式二： 容器远程连接
 
 # 查询 some-mysql ip
 docker inspect some-mysql
 # -h 后的 ip 替换为 some-mysql 容器的ip
 docker run -it  --rm mysql:5.7.26 mysql -h172.17.0.2 -uroot -p
 
+# 方式三：主机远程连接
+
+# -p参数添加主机映射端口
+docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7.26
+# 使用主机的 navicate 等工具连接
 ```
 
 ## 进入容器
