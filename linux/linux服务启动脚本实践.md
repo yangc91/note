@@ -30,6 +30,8 @@
 ### status
 >检测是否有pid文件，无则提示未启动，有则提示$PID,pid文件路径,进程相关信息
 
+
+## 脚本
 ```bash
 #!/bin/sh
 # $0 表shell命令第一个参数，即脚本本身
@@ -113,3 +115,12 @@ esac
 
 exit 0
 ```
+
+## 重定向输出
+
+```
+./start.sh start >/dev/null 2>&1 &
+```
+
+`command >/dev/null` 表示将标准输出重定向到 `/dev/null`,即忽略
+`2>&1` 表将标准异常输出重定向到标准输出，即最终转向`/dev/null`

@@ -145,7 +145,7 @@ ByteBuf.readSlice();
 在与客户端对接时，需要提前进行约定并保持一致
 
 netty 提供了如下接口，方便读、写
-```java
+```
 // read
 byteBuf.readInt();
 byteBuf.readIntLE();
