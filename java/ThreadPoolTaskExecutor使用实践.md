@@ -80,3 +80,7 @@ ThreadPoolTaskExecutor使用实践
 参考资料
 ---
 [ThreadPoolTaskExecutor使用详解](https://blog.csdn.net/foreverling/article/details/78073105)
+
+> 新发现了一篇线程池的深度好文，特此补充。
+
+[一次Java线程池误用引发的血案和总结](https://zhuanlan.zhihu.com/p/32867181)
