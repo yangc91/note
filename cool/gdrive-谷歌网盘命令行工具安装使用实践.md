@@ -48,7 +48,7 @@ eg：
 ./gdrive-linux-x64  list --query ''
 
 # 指定文件夹下的文件列表、控制页size、排序等：（fileId 根据上面的命令获得）
-./gdrive-linux-x64  list --query  "'fileId' in parents"  -m 50 --order 'name_natural'
+./gdrive-linux-x64  list --query  "'fileId' in parents and name contains 'pdf'"  -m 50 --order 'name_natural'
 ```
 
 ## 下载
@@ -78,7 +78,10 @@ eg：
 # 下载指定文件夹
 ./gdrive-linux-x64 download -r fileId
 
+# 下载指定文件夹下符合筛选条件的文件
 ```
+./gdrive-linux-x64 download query "'fileId' in parents and name contains 'pdf'"
+
 
 > 目前个人的需求就只用到了批量下载，后续用到其它接口快速查询 api 即可。
 

@@ -125,9 +125,13 @@ vim server.xml
 
 ```
 
-> 参数说明：
+> 参数说明：`
 * acceptCount: 请求等待队列大小，默认100（tomcat没有空闲线程处理请求时放入该队列缓存起来），超出该队列大小后，拒绝连接
 * maxConnections： tomcat最大并发连接数，bio默认是maxThreads数量，nio和nio2默认是10000，arp默认8192
 * minSpareThreads： 线程池最小线程数，默认10
 * maxThreads: 线程池最大线程数，默认200
 
+
+#### 好文
+
+[详解tomcat的连接数与线程池](https://www.cnblogs.com/kismetv/p/7806063.html#t3)
