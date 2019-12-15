@@ -1,4 +1,4 @@
-# 01_k8s实践_pod部署
+# 03_k8s实践_pod部署
 
 ## nginx pod dome
 
