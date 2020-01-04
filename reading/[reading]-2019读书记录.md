@@ -1,5 +1,7 @@
 # 2019读书记录
 
+![](https://yangc91.oss-cn-hongkong.aliyuncs.com/imgs/20200104203602.png)
+
 ## 1月
   * 影响力 (2019/01/02)
   * 我，机器人
