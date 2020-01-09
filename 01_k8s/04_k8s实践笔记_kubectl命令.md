@@ -10,6 +10,11 @@
 
 `kubectl get pods -o wide` 显示 ip 和 节点
 
+``
+# 查看 pod 标签
+k get pod --show-labels
+```
+
 ## kubectl describe
 > 查看 k8s 对象详细信息
 ![](https://yangc91.oss-cn-hongkong.aliyuncs.com/imgs/20191213142420.png)
